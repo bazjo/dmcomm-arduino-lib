@@ -23,11 +23,11 @@ Loosely based on `dmcomm-python`, but avoiding dynamic allocation (except in Ser
 * Find the [Arduino15 folder](https://support.arduino.cc/hc/en-us/articles/360018448279-Open-the-Arduino15-folder)
 * ATmega32U4:
   * Increasing the serial buffer is not required
-* Nano/Uno:
+* Nano/Uno, Bazjo D-Com with grey pegs (ATmega328P):
   * From the Arduino15 folder, go to `packages/arduino/hardware/avr/{version}`
   * Create `platform.local.txt` containing `compiler.cpp.extra_flags=-DSERIAL_RX_BUFFER_SIZE=128`
   * Restart the Arduino IDE
-* Bazjo D-Com:
+* Bazjo D-Com with black pegs (ATmega328PB):
   * Install [MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)
   * From the Arduino15 folder, go to `packages/minicore/hardware/avr/{version}`
   * Open `boards.txt`
